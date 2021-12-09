@@ -58,6 +58,11 @@ body {
     font-weight: inherit;
 }
 
+.nav__items:hover {
+    background-color: white;
+    color: rgb(133, 133, 133);
+}
+
 .nav__items--cta {
     border: 1px solid white;
 }
@@ -95,6 +100,10 @@ body {
     color: var(--color-primary);
     text-decoration: none;
     border-radius: 40px;
+}
+
+.hero__cta:hover {
+    background-color: #dadada;
 }
 
 .hero__wave {
@@ -135,6 +144,10 @@ body {
     text-decoration: none;
     padding: var(--boton-padding);
     border-radius: 40px;
+}
+
+.presentation__cta:hover {
+    background-color: #566ac0;
 }
 
 .about {
@@ -321,6 +334,14 @@ body {
     border-radius: 50%;
 }
 
+.footer__container-icons:hover {
+    border: 1px solid black;
+}
+
+.footer__container-icons:hover .footer__icon {
+    color: black;
+}
+
 .footer__icon {
     color: white;
     font-size: 30px;
@@ -329,4 +350,127 @@ body {
 
 .fab.footer__icon {
     line-height: 60px;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 800px) {
+     :root {
+        --boton-padding: 18px 40px;
+    }
+    .nav {
+        justify-content: space-around;
+    }
+    .nav__items--cta {
+        border: none;
+    }
+    .nav__items {
+        font-weight: 400;
+        border-bottom: 1px solid white;
+        margin-right: 0;
+    }
+    .nav__items--footer {
+        border: none;
+    }
+    .hero__text {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    .hero__subtitle {
+        font-size: 1.5rem;
+    }
+    /* About */
+    .presentation__copy {
+        width: 100%;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about.container {
+        padding-top: 30px;
+    }
+    .about__img--left {
+        text-align: center;
+    }
+    .about__texts:last-child {
+        grid-row: 3 / 4;
+    }
+    /* Projects */
+    .projects__grid {
+        grid-template-areas: 'dev dev edu edu' 'cloud cloud sec sec';
+    }
+    /* Testomony */
+    .testimony__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+    .footer__contact {
+        grid-row: 1 / 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+     :root {
+        --boton-padding: 18px 35px;
+    }
+    .subtitle {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    .nav__items {
+        padding: 0 10px;
+        border: 0;
+    }
+    .hero__text {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .hero__title {
+        font-size: 2rem;
+    }
+    /* About */
+    .presentation__picture {
+        width: 120px;
+        height: 120px;
+    }
+    .about {
+        row-gap: 60px;
+    }
+    .about.container {
+        padding-top: 10px;
+    }
+    /* Projects */
+    .projects__grid {
+        grid-template-areas: 'dev' 'edu' 'cloud' 'sec';
+        height: auto;
+        grid-template-rows: repeat(4, 100px);
+    }
+    /* Testimony */
+    .testimony__item {
+        padding: 30px 15px;
+    }
+    .testimony__person {
+        flex-direction: column;
+    }
+    .testimony__texts {
+        text-align: center;
+    }
+    .testimony__img {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    /* Footer */
 }
