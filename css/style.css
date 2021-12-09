@@ -9,6 +9,76 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#fondo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.cerrar {
+    font-size: 2.5rem;
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 2;
+}
+
+.info {
+    background-color: white;
+    width: 95%;
+    max-width: 650px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.info__img {
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+.info__paragraph {
+    margin-top: 25px;
+}
+
+.btn__os {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-secondary);
+    padding: var(--boton-padding);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.btn__os:hover {
+    background-color: #513886;
+}
+
+#udev {
+    display: none;
+}
+
+#uedu {
+    display: none;
+}
+
+#ucloud {
+    display: none;
+}
+
+#usec {
+    display: none;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -359,6 +429,12 @@ body {
      :root {
         --boton-padding: 18px 40px;
     }
+    .info__img {
+        width: 200px;
+    }
+    .info__paragraph {
+        font-size: .9rem;
+    }
     .nav {
         justify-content: space-around;
     }
@@ -421,6 +497,12 @@ body {
      :root {
         --boton-padding: 18px 35px;
     }
+    .info__img {
+        width: 170px;
+    }
+    .info__paragraph {
+        font-size: .8rem;
+    }
     .subtitle {
         font-size: 2rem;
         margin-bottom: 20px;
@@ -472,5 +554,4 @@ body {
         margin: 0;
         margin-bottom: 20px;
     }
-    /* Footer */
 }

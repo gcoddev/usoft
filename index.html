@@ -12,6 +12,65 @@
 </head>
 
 <body>
+    <div id="fondo">
+        <div class="info" id="udev">
+            <img src="img/uDev_t.png" alt="" class="info__img">
+            <div class="info__paragraph">
+                <ul>
+                    <li>uDev es nuestro programa principal de cara a ofrecer el mejor servicio a las empresas en cuanto a desarrollo de software empresarial. Como ser:</li>
+                    <ul>
+                        <li>Desarrollo web, creación y gestión de páginas online basadas en la nube, hosting y dominio con certificado SSL incluidos.</li>
+                        <li>Desarrollo de aplicaciones móviles tanto Android como iOS para una mejor experiencia con sus clientes.</li>
+                        <li>Desarrollo de programas de escritorio para Windows y Mac, para facilitar la administración del servicio.</li>
+                    </ul>
+                </ul>
+            </div>
+            <a href="" class="btn__os">Obtener servicio</a>
+        </div>
+        <div class="info" id="uedu">
+            <img src="img/uEdu_t.png" alt="" class="info__img">
+            <div class="info__paragraph">
+                <ul>
+                    <li>La formación de futuros talentos es una parte fundamental de nuestra empresa, es por eso que fundamos uEdu, para apoyar la formación en general de nuestra población en edad escolar y universitaria para incorporarlos al ámbito laboral
+                        de forma natural. Para esto realizamos:</li>
+                    <ul>
+                        <li>Cooperaciones con el ministerio de educación para introducir nuestros servicios y brindar toda una gama de herramientas digitales para mejorar la calidad de educación en las escuelas públicas y privadas.</li>
+                        <li>Convenios con distintas universidades para apoyar su formación mediante becas a estudiantes destacados en áreas tecnológicas para una inclusión más orgánica al ámbito laboral.</li>
+                    </ul>
+                </ul>
+            </div>
+            <a href="" class="btn__os">Obtener servicio</a>
+        </div>
+        <div class="info" id="ucloud">
+            <img src="img/uCloud_t.png" alt="" class="info__img">
+            <div class="info__paragraph">
+                <ul>
+                    <li>uCloud proporciona servicios de almacenamiento y gestión de su base de datos.</li>
+                    <ul>
+                        <li>Almacenamiento escalable, el espacio disponible en su nube irá creciendo a medida que su empresa vaya requiriendo más espacio de almacenamiento.</li>
+                        <li>Espacio cifrado, sus datos privados se encontrarán cifrados y seguros aún estando conectados a internet.</li>
+                        <li>Rápido acceso a sus datos desde cualquier tipo de conexión.</li>
+                    </ul>
+                </ul>
+            </div>
+            <a href="" class="btn__os">Obtener servicio</a>
+        </div>
+        <div class="info" id="usec">
+            <img src="img/uSec_t.png" alt="" class="info__img">
+            <div class="info__paragraph">
+                <ul>
+                    <li>uSec mantiene los datos importantes seguros de posibles ataques o intentos de vulnerar la privacidad de sus datos.</li>
+                    <ul>
+                        <li>Introducimos protocolos de cifrado p2p (de extremo a extremo) para la mayor privacidad posible (uSec no almacena ni lee sus datos, únicamente los cifra).</li>
+                        <li>Mantiene seguros los datos en su nube privada para que acceda a ellos de forma segura.</li>
+                    </ul>
+                </ul>
+            </div>
+            <a href="" class="btn__os">Obtener servicio</a>
+        </div>
+        <span class="cerrar" onclick="cerrar()">X</span>
+    </div>
+
     <header class="hero">
         <div class="container">
             <nav class="nav">
@@ -38,17 +97,21 @@
         <section class="presentation container">
             <img src="img/uSoft.png" alt="Logo uSoft" class="presentation__picture">
             <h2 class="subtitle">Somos uSoft</h2>
-            <p class="presentation__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at illum, quasi aliquam saepe, iusto impedit blanditiis quam, itaque vel nesciunt? Dolor et repellendus animi optio deleniti eveniet temporibus voluptatem!</p>
+            <p class="presentation__copy">uSoft es una empresa dedicada principalmente al desarrollo de software, sistemas y aplicaciones empresariales para satisfacer las necesidades de nuestros clientes de manera general o en ámbitos específicos. Ofrecemos fiabilidad en tiempo y
+                trabajo, además de contar con altos estándares de calidad acordes al mundo actual para nuestros productos.
+            </p>
             <a href="" class="presentation__cta">Contactanos</a>
         </section>
 
         <section class="about container">
             <div class="about__texts">
                 <h2 class="subtitle">
-                    Nuestros servicios
+                    Nuestros objetivos
                 </h2>
                 <p class="about__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ducimus? Quos, porro laudantium omnis cupiditate quasi in quia, eveniet vero sapiente quod necessitatibus, velit fuga possimus placeat quaerat ullam natus.
+                    Convertirnos en la empresa líder a nivel nacional en desarrollo de software y programas empresariales. Contribuir al desarrollo del país mediante nuestros programas de becas, además de apoyar la educación y formación de futuros talentos desde una temprana
+                    edad.
+
                 </p>
             </div>
             <figure class="about__img">
@@ -62,7 +125,8 @@
                     Sobre nuestros servicios
                 </h2>
                 <p class="about__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ducimus? Quos, porro laudantium omnis cupiditate quasi in quia, eveniet vero sapiente quod necessitatibus, velit fuga possimus placeat quaerat ullam natus.
+                    Para mantenernos a la vanguardia de los avances tecnológicos capacitamos constantemente a nuestros empleados para especializarlos en cada una de sus áreas. Ofrecemos asesoramiento en marketing empresarial para darle mayor visibilidad en la sociedad empleando
+                    estrategias de segmentación, branding, funcionales, de contenido, redes sociales, storytelling, etc. Para alcanzar nuestros objetivos formamos todo un ecosistema de programas para brindarle una mejor experiencia.
                 </p>
             </div>
         </section>
@@ -71,28 +135,28 @@
             <div class="container">
                 <h2 class="subtitle">Nuestros servicios</h2>
                 <div class="projects__grid">
-                    <article class="projects__item">
+                    <article class="projects__item" onclick="udev()">
                         <img src="img/uDev_t.png" alt="Service" class="projects__img">
                         <div class="projects__hover">
                             <h2 class="projects__title">Servicio</h2>
                             <i class="far fa-file-alt projects__icon"></i>
                         </div>
                     </article>
-                    <article class="projects__item">
+                    <article class="projects__item" onclick="uedu()">
                         <img src="img/uEdu_t.png" alt="Service" class="projects__img">
                         <div class="projects__hover">
                             <h2 class="projects__title">Servicio</h2>
                             <i class="far fa-file-alt projects__icon"></i>
                         </div>
                     </article>
-                    <article class="projects__item">
+                    <article class="projects__item" onclick="ucloud()">
                         <img src="img/uCloud_t.png" alt="Service" class="projects__img">
                         <div class="projects__hover">
                             <h2 class="projects__title">Servicio</h2>
                             <i class="far fa-file-alt projects__icon"></i>
                         </div>
                     </article>
-                    <article class="projects__item">
+                    <article class="projects__item" onclick="usec()">
                         <img src="img/uSec_t.png" alt="Service" class="projects__img ">
                         <div class="projects__hover ">
                             <h2 class="projects__title ">Servicio</h2>
@@ -162,6 +226,7 @@
 
 
     <script src="https://kit.fontawesome.com/9f2988ea01.js " crossorigin="anonymous "></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
