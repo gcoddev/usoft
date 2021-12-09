@@ -429,6 +429,9 @@ body {
      :root {
         --boton-padding: 18px 40px;
     }
+    .info {
+        padding: 30px;
+    }
     .info__img {
         width: 200px;
     }
@@ -496,6 +499,9 @@ body {
 @media screen and (max-width: 500px) {
      :root {
         --boton-padding: 18px 35px;
+    }
+    .info {
+        padding: 20px;
     }
     .info__img {
         width: 170px;
